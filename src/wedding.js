@@ -1,6 +1,16 @@
 // Illustrative Telugu-inspired schedule. Confirm customs, muhurtham and venues with your families.
-window.wedding = {
+export const wedding = {
  ceremony: '2027-02-14T10:30:00+05:30',
+ timeZone: 'Asia/Kolkata',
+ groom: { name: 'Arjun', surname: 'Reddy', parents: 'Lakshmi & Srinivas Reddy', hometown: 'Hyderabad, Telangana' },
+ bride: { name: 'Kavya', surname: 'Rao', parents: 'Padma & Venkatesh Rao', hometown: 'Vijayawada, Andhra Pradesh' },
+ city: 'Hyderabad', location: 'Hyderabad, Telangana · India',
+ tradition: 'Telugu-inspired South Indian celebration',
+ message: 'With hearts full of love and gratitude, we invite you to celebrate our wedding.',
+ blessing: 'With the blessings of Lord Ganesha',
+ blessingMeaning: 'May our new journey be filled with love, wisdom and joy.',
+ music: 'assets/flute.wav', ganesha: 'assets/ganesha.webp', mandap: 'assets/south-mandap.webp',
+ contacts: [{label: 'GROOM’S FAMILY', name: 'Vikram Reddy', email: 'reddy-family@example.com', phone: ''}, {label: 'BRIDE’S FAMILY', name: 'Ananya Rao', email: 'rao-family@example.com', phone: ''}],
  events: [
  {name:'Ganesh Puja',day:'12',month:'FEB',date:'Friday, 12 February',time:'4:00 PM – 5:30 PM',start:'20270212T103000Z',end:'20270212T120000Z',venue:'Sri Padma Courtyard',address:'Sample venue · Jubilee Hills, Hyderabad, Telangana, India',note:'An auspicious start, with family blessings',dress:'Traditional attire'},
  {name:'Pellikoduku',day:'13',month:'FEB',date:'Saturday, 13 February',time:'9:00 AM – 11:00 AM',start:'20270213T033000Z',end:'20270213T053000Z',venue:'The Reddy Family Residence',address:'Sample venue · Jubilee Hills, Hyderabad, Telangana, India',note:'Celebrating the groom with love & joy',dress:'Ivory, gold & a touch of yellow'},

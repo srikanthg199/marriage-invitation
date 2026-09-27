@@ -1,0 +1,5 @@
+import { wedding, asset, dateLabel, weekdayLabel, shortDate } from '../config.js';
+
+export default function Families() {
+ return (<><section id="families" className="section families reveal"><p className="eyebrow">THE LOVE THAT BROUGHT US HERE</p><h2>Two families, one celebration</h2><p className="intro">With the blessings of our elders and the love of our families,<br />we begin a new chapter together.</p><div className="family-grid"><article><p className="eyebrow">THE GROOM</p><h3>{wedding.groom.name} {wedding.groom.surname}</h3><p>Beloved son of</p><strong>{wedding.groom.parents}</strong><p>{wedding.groom.hometown}</p></article><div className="family-and">&</div><article><p className="eyebrow">THE BRIDE</p><h3>{wedding.bride.name} {wedding.bride.surname}</h3><p>Beloved daughter of</p><strong>{wedding.bride.parents}</strong><p>{wedding.bride.hometown}</p></article></div><p className="family-closing">The {wedding.groom.surname} and {wedding.bride.surname} families warmly invite you to share in the joy.</p></section></>);
+}

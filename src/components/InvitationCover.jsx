@@ -1,0 +1,8 @@
+import { useEffect, useRef } from 'react';
+import { wedding, asset, dateLabel } from '../config.js';
+
+export default function InvitationCover({ opening, onOpen, preferQuiet }) {
+  const music = useRef(null), quiet = useRef(null);
+  useEffect(() => { (preferQuiet ? quiet : music).current.focus(); }, []);
+  return <div id="invitation" className={`cover ${opening ? 'opened' : ''}`} role="dialog" aria-modal="true" aria-labelledby="cover-title" onKeyDown={event => { if (event.key === 'Tab') { if (event.shiftKey && document.activeElement === music.current) { event.preventDefault(); quiet.current.focus(); } else if (!event.shiftKey && document.activeElement === quiet.current) { event.preventDefault(); music.current.focus(); } } }}><div className="door door-left" aria-hidden="true" /><div className="door door-right" aria-hidden="true" /><div className="cover-inner"><p className="eyebrow">WITH BLESSINGS, LOVE & TRADITION</p><img className="cover-ganesha" src={asset(wedding.ganesha)} alt="Lord Ganesha, seated on a lotus" /><p className="blessing-label">{wedding.blessing}</p><p className="script">With love, we invite you</p><h1 id="cover-title">{wedding.groom.name} <i>&</i> {wedding.bride.name}</h1><p>{dateLabel} · {wedding.city.toUpperCase()}</p><div className="gold-rule" /><button ref={music} className="button" id="open-music" onClick={() => onOpen(true)}>Open Invitation <span>↗</span></button><button ref={quiet} className="text-button" id="open-quiet" onClick={() => onOpen(false)}>Open without music</button><p className="cover-note">A sample invitation, made for an auspicious beginning</p></div></div>;
+}

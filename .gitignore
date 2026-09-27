@@ -6,3 +6,8 @@ preview-*.png
 *.tar.gz
 .DS_Store
 Thumbs.db
+node_modules/
+dist/
+migrate_react.py
+.env
+.env.local

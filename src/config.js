@@ -1,0 +1,10 @@
+export { wedding } from './wedding.js';
+import { wedding } from './wedding.js';
+export const asset = path => `${import.meta.env.BASE_URL}${path}`;
+const ceremony = new Date(wedding.ceremony);
+const format = options => new Intl.DateTimeFormat('en-GB', { timeZone: wedding.timeZone, ...options }).format(ceremony);
+export const dateLabel = format({ day: 'numeric', month: 'long', year: 'numeric' }).toUpperCase();
+export const weekdayLabel = format({ weekday: 'long' }).toUpperCase();
+export const shortDate = format({ day: '2-digit', month: '2-digit', year: 'numeric' }).replaceAll('/', '.');
+export const timeLabel = format({ hour: 'numeric', minute: '2-digit', hour12: true }).toUpperCase();
+export const couple = `${wedding.groom.name} & ${wedding.bride.name}`;

@@ -1,0 +1,5 @@
+import { wedding, asset, dateLabel, weekdayLabel, shortDate } from '../config.js';
+
+export default function Hero() {
+ return (<><section className="hero" id="home"><div className="hero-copy"><p className="eyebrow">TOGETHER WITH OUR FAMILIES</p><p className="script">With blessings, our forever begins.</p><h1><span>{wedding.groom.name}</span><i>&</i><span>{wedding.bride.name}</span></h1><div className="gold-rule"></div><p className="invite-copy">{wedding.message}</p><p className="hero-date">SUMUHURTHAM · {weekdayLabel}, {dateLabel}</p><p className="location">{wedding.location}</p><a className="button" href="#events">Explore the celebrations <span>↓</span></a></div><div className="hero-art"><img src={asset(wedding.mandap)} alt="South Indian wedding mandap with carved temple pillars, jasmine garlands, banana leaves and brass lamps" width="1200" height="800" /><div className="art-caption">A sacred bond. A lifetime of love.</div></div><a href="#families" className="scroll-note">SCROLL TO OUR INVITATION <span>↓</span></a></section></>);
+}
