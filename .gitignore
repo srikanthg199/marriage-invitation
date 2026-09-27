@@ -11,3 +11,4 @@ dist/
 migrate_react.py
 .env
 .env.local
+.vercel/
