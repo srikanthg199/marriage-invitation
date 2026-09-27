@@ -1,0 +1,8 @@
+# Local preview and one-off authoring helpers
+check-visual.cjs
+fonts-download.css
+update_south.py
+preview-*.png
+*.tar.gz
+.DS_Store
+Thumbs.db

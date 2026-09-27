@@ -1,15 +1,18 @@
-# Aarav & Meera wedding invitation
+# Arjun & Kavya — South Indian wedding invitation
 
-Open `dist/index.html` or serve the dist folder with any static web server.
+A Telugu-inspired sample celebration in Hyderabad, 12–14 February 2027. All names, events, venues, contacts and the muhurtham are illustrative. Confirm family customs and final details before sharing.
 
-Sample North Indian wedding, 12–14 February 2027, Jaipur. All people, venues and contacts are illustrative. Directions currently point to the sample street area, not a booked venue.
+## Edit the invitation
+- Names, parents, welcome message, date labels and contacts: dist/index.html.
+- Events, calendar UTC timestamps, countdown and gallery: dist/data.js.
+- South Indian colours, Lord Ganesha placement and decorative doors: dist/south.css.
+- Typography: dist/refinements.css. Base layout: dist/style.css.
+- Scroll and photo animations: dist/motion.js. Opening, music, calendar and gallery controls: dist/app.js.
+- Music: dist/assets/flute.wav (original synthesized flute-style sample). Replace with your licensed music and update the audio source in index.html.
 
-## Update
-- Couple and family names, welcome wording, date labels, contacts and audio path: `dist/index.html`.
-- Event schedule, UTC calendar timestamps, ceremony countdown and gallery captions: `dist/data.js`.
-- Colours, fonts and layout: `dist/style.css`.
-- Replace gallery files and mandap image under `dist/assets/`.
-- Replace `flute.wav` with your own licensed track and update the audio source. The included melody is an original synthesized flute-style sample, not a recorded traditional performance.
-- Replace each generated directions query in `app.js` with verified venue links before guest distribution.
+## Artwork
+Created using the built-in image-generation tool. Optimized site assets are dist/assets/ganesha.webp, south-mandap.webp and south-gallery-1.webp through south-gallery-4.webp. Original files are in ../art/south/.
 
-All calendar timestamps use UTC; displayed times use IST. Keep both aligned when editing. Photographs and mandap are AI-generated illustrative assets. Fonts load from Google Fonts with local serif/sans-serif fallbacks. Music preferences and volume are saved only in the visitor's browser; opening always requires a tap.
+Prompts: respectful seated Lord Ganesha in gold and vermilion on a lotus, warm ivory background; traditional South Indian carved gold mandap with jasmine, marigolds, mango-leaf toran, banana trees and brass lamps; four fictional South Indian wedding photographs showing a couple in maroon silk sari and ivory dhoti, silk and jasmine details, mandap and a temple courtyard walk.
+
+Gallery photographs are clearly labelled as AI-generated samples. Google Maps links currently identify sample neighbourhoods rather than confirmed venues. Body copy is English. Music preference and volume are saved in the visitor's browser. All motion respects the reduced-motion setting.
